@@ -1,0 +1,73 @@
+body {
+    background-color: #f4cfcf;
+    font: 1em sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529
+}
+/*header*/
+
+.navbar-brand {
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.text-uppercase {
+    text-transform: uppercase
+}
+.text-center {
+    text-align: center;
+}
+.text-muted {
+    color: gray;
+}
+
+
+/*links*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #96cbe8;
+}
+
+/*fonts*/
+.forum-regular {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-regular {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .red-hat {
+    font-family: "Red Hat Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/*lists*/
+ul {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

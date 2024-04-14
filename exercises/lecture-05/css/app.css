@@ -1,0 +1,90 @@
+body {
+    background-color: #f4cfcf;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Raleway", sans-serif;
+    color: #212529
+}
+/*header*/
+
+.navbar-brand {
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.text-uppercase {
+    text-transform: uppercase
+}
+.text-center {
+    text-align: center;
+}
+.text-muted {
+    color: gray;
+}
+
+
+/*links*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #96cbe8;
+}
+
+/*fonts*/
+.forum-regular {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-regular {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .red-hat {
+    font-family: "Red Hat Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/*lists*/
+ul {
+    list-style: none;
+}
+
+.social-icon.facebook::before {
+    content: '\f09a';
+}
+
+.social-icon.twitter::before {
+    content: '\f099';
+}
+
+.social-icon.youtube::before {
+    content: '\f167';
+}
+
+.social-icon.google::before {
+    content: '\f1a0';
+}
+
+
+
+
+
+
+
+
+
+
+
+

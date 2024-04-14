@@ -1,8 +1,9 @@
 body {
     background-color: #f4cfcf;
-    font: 1em sans-serif;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    font-family: "Raleway", sans-serif;
     color: #212529
 }
 /*header*/
@@ -58,6 +59,22 @@ a:hover {
 /*lists*/
 ul {
     list-style: none;
+}
+
+.social-icon.facebook::before {
+    content: '\f09a';
+}
+
+.social-icon.twitter::before {
+    content: '\f099';
+}
+
+.social-icon.youtube::before {
+    content: '\f167';
+}
+
+.social-icon.google::before {
+    content: '\f1a0';
 }
 
 

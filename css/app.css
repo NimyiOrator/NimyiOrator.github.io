@@ -4,8 +4,9 @@ body {
     font-weight: 400;
     line-height: 1.5;
     font-family: "Raleway", sans-serif;
-    color: #212529
+    color: #212529;
 }
+
 /*header*/
 
 .navbar-brand {
@@ -77,8 +78,37 @@ ul {
     content: '\f1a0';
 }
 
+.container1 {
+    background-image: url(books.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
+h4 {
+    font-family: "Forum", serif;
+}
+
+
+img {
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.img-fluid {
+    height: auto;
+    max-width: 100%;
+
+}
+
+p {
+    color: aliceblue;
+}
+
+.divider {
+    background: linear-gradient(to right, rgb(246, 210, 154) 5%, rgb(236, 197, 130) 17%, rgb(234, 184, 104) 40%, rgb(241, 193, 121) 85%, #f3a553f1 95%);
+}
 
 
 

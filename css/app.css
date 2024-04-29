@@ -1,17 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f4cfcf;
+    background-color: #f9e8e8;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     font-family: "Raleway", sans-serif;
-    color: #212529;
+    color: #646b72;
+    display: block;
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+    font-weight:700;
+    line-height:1.2;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+h6, .h6 {
+    font-size: 1rem;
+}
+
+.small{
+    font-size:1rem
+}
+
+.lead{
+    font-size:1.25rem;
+    font-weight:300
 }
 
 /*header*/
+.navbar {
+    padding: 0.5rem 5%;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .navbar-brand {
     text-decoration: none;
     text-wrap: nowrap;
+}
+
+.navbar-wrapper {
+    display: flex;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin-right: 1rem;
 }
 
 .text-uppercase {
@@ -21,45 +75,32 @@ body {
     text-align: center;
 }
 .text-muted {
-    color: gray;
+    color: rgb(242, 171, 171);
+}
+
+.hero-heading{
+    font-size:2rem
 }
 
 
 /*links*/
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(42, 41, 41);
 }
 
 a:hover {
     color: #96cbe8;
 }
-
-/*fonts*/
-.forum-regular {
-  font-family: "Forum", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.raleway-regular {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .red-hat {
-    font-family: "Red Hat Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
   
 
 /*lists*/
 ul {
     list-style: none;
+}
+
+.list-inline-item{
+    display: inline-block;
 }
 
 .social-icon.facebook::before {
@@ -94,25 +135,185 @@ h4 {
 img {
     vertical-align: middle;
     justify-content: center;
+    align-self: center;
 }
 
 .img-fluid {
-    height: auto;
-    max-width: 100%;
-
+    display: block;
+    height: 300px;
+    width: 200px;
 }
 
 p {
+    font-size: 1rem;
     color: aliceblue;
 }
 
+.row {
+    width: 100%;
+    margin: 0;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: space-around;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    background-position: center center !important;
+    background-size: cover !important;
+    padding: 12rem 0;
+    justify-content: center;
+    margin: 0px;
+}
+
 .divider {
-    background: linear-gradient(to right, rgb(246, 210, 154) 5%, rgb(236, 197, 130) 17%, rgb(234, 184, 104) 40%, rgb(241, 193, 121) 85%, #f3a553f1 95%);
+    background-repeat: no-repeat;
+    background-position: center center !important;
+    background-size: cover !important;
+    padding: 12rem 0;
+    background-attachment: fixed !important;
 }
 
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
 
+.bg-footer {
+    background-color: rgb(89, 87, 87);
+}
 
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.col-4 {
+    max-width: calc((100% / 12) * 4);
+    flex: o 1 auto;
+
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+    flex: 1
+}
+
+.border-top {
+    border-top: #212529 3px solid;
+}
+
+.table {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    border-collapse: collapse;
+    display: table;
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-style: solid;
+    border-width: 0;
+    border-color: inherit;
+}
+
+.table thead {
+    vertical-align: bottom;
+}
+
+.table th {
+    padding: 1rem 0;
+    color: rgb(161, 160, 170);
+    font-weight: 700;
+    text-align: left;
+}
+
+.table tr {
+    display: table-row;
+}
+
+.table td {
+    padding: .5rem 0;
+    display: table-cell;
+}
+
+.table td .remove{
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+    color: red;
+}
+
+.bg-light {
+    background-color: #c3e6f8;
+    width: 100%;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+@media (min-width: 480px) {
+
+    .col-xsm-3 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (min-width: 560px) {
+
+    .col-sm-3 {
+        width: calc((100% / 12) * 6);  
+    }
+    
+}
+
+@media (min-width: 760px) {
+
+    .col-md-3 {
+        width: calc((100% / 12) * 6);  
+    }
+
+    .catalog {
+        flex: 4;
+        order: 1;
+    }
+    
+    .sidebar {
+        flex: .5;
+        order: 2;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .col-lg-3 {
+        width: calc((100% / 12) * 4);  
+    }
+    
+}
+.catalog, .sidebar  {
+   width: 100%;
+}
 
 
 

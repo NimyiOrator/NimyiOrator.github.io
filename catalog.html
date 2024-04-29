@@ -3,32 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" lang="ua" content="На цій сторінці ви можете ознайомитись із нашими пропозиціями.">
+    <meta name="description" lang="ua" content="Це персональний сайт Анни Осипенко. Тут ви знайдете інформацію про мої досягнення, резюме, а також зможете звʼязатись зі мною.">
+    <meta name="description" lang="en" content="This is Anna Osypenko's personal website. Here you will find information about my achievements, CV, and my contacts.">
     <meta name="keywords" lang="ua" content="особистий сайт, дизайн, маркетинг, навчання">
+    <meta name="keywords" lang="en" content="personal website, design, marketing, training">
     <meta name="googlebot" content="notranslate" >
-    <title>Catalog of our products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LARUM</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="https://kit.fontawesome.com/7b5daf2193.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--Заголовок сторінки-->
-<header><h1>Catalog of our products</h1></header>
+
 	<!--Навігаційна панель-->
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Main page</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="#!">Catalog</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contacts</a></li>
+    <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Publishing house LARUM</a>
+
+    <div class="navbar-wrapper">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#!" class="nav-link text-uppercase">Main page</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About us</a></li>
+            <li class="nav-item"><a href="catalog.html" class="nav-link text-uppercase">Catalog</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link text-uppercase">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link text-uppercase">Contacts</a></li>
         </ul>
-<hr>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-uppercase" href="cart.html"><i class="fas fa-cart-shopping"></i></a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="heart.html"><i class="fas fa-heart"></i></a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>  
+<!--Заголовок сторінки-->
+<div class="container">
+    <div class="row">
+
+      <aside class="py-5 sidebar">
+        <div class="container">
+          <header class="text-center">
+            <h2 class="">Sidebar</h2>
+            
+          </header>
+        </div>
+        
+      </aside>
+      <!-- New arrivals-->
+      <main class="py-5 catalog">
+        <div class="container">
+          
+          <header class="text-center">
+            <h2 class="">Новинки</h2>
+            <p class="text-muted">Обирай із наших нових надходжень</p>
+          </header>
+          
+          <div class="container text-center" id="newArrivals">
+            <div class="wrapper row">
+              <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
+                
+                <div class="product"><span class="badge">Новинка</span><a href="detail.html">
+                  <img class="img-fluid" src="images/1_1_27.png" alt="Round grey hanging decor">
+                </a>
+                
+                </div>
+
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Нові темні віки. Колонія</a></h6>
+                <p class="text-center text-muted">450 грн</p>
+              </article>
+              <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
+                
+                <div class="product"><span class="badge">Новинка</span><a href="detail.html">
+                  <img class="img-fluid " src="images/212_1_11.jpg" alt="Round grey hanging decor">
+                </a>
+                
+                </div>
+
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Незриме життя Адді Лярю</a></h6>
+                <p class="text-center text-muted">500 грн</p>
+              </article>
+              <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
+                
+                <div class="product"><span class="badge">Новинка</span><a href="detail.html">
+                  <img class="img-fluid" src="images/221_1_15.jpg" alt="Round grey hanging decor">
+                </a>
+                
+                </div>
+
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Гра престолів</a></h6>
+                <p class="text-center text-muted">600 грн</p>
+              </article>
+              <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
+                
+                <div class="product"><span class="badge">Новинка</span><a href="detail.html">
+                  <img class="img-fluid" src="images/30_1_16.jpg" alt="Round grey hanging decor">
+                </a>
+                
+                </div>
+
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Танець недоумка</a></h6>
+                <p class="text-center text-muted">350 грн</p>
+              </article>
+              <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
+                
+                <div class="product"><span class="badge">Новинка</span><a href="detail.html">
+                  <img class="img-fluid" src="images/61a364d5d7ef5528b2fed6d4f34593c5.png" alt="Round grey hanging decor">
+                </a>
+                
+                </div>
+
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Двір срібного полумʼя</a></h6>
+                <p class="text-center text-muted">400 грн</p>
+              </article>
+            </div>
+            <!-- prev next -->
+            
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
 <!--Підвал сторінки-->
-<footer>
-<p>Anna Osypenko's personal website &#169 2024</p>
-You can read about our new items in our <a href="https://web.telegram.org/" target="_blank">Telegram channel</a>
+<footer class="bg-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h6 class="text-white">Menu</h6>
+                <ul class="list-unstyled text-muted float-left">
+                    <li class="mb-2"> <a class="reset-anchor" href="#">About</a></li>
+                    <li class="mb-2"><a class="reset-anchor" href="#">Blog</a></li>
+                    <li class="mb-2"><a class="reset-anchor" href="#">Contact</a></li>
+                    <li class="mb-2"><a class="reset-anchor" href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h6 class="text-white">Checkout</h6>
+                <ul class="list-unstyled text-muted float-left">
+                    <li class="mb-2"> <a class="reset-anchor" href="#">My Account</a></li>
+                    <li class="mb-2"> <a class="reset-anchor" href="#">Orders Tracking</a></li>
+                    <li class="mb-2"> <a class="reset-anchor" href="#">Checkout</a></li>
+                    <li class="mb-2"> <a class="reset-anchor" href="#">Wishlist</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+380 380 38 00</a></p>
+                <p class="text-muted">Cагайдачного 35б, Київ, Україна</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-google"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 text-left">
+                <p class="small">Pablishing house LARUM &#169 2024</p>
+            </div>
+            <div class="col-6 text-right">
+                <p class="small">Designed by Anna Osypenko</p>
+            </div>
+        </div>
+    </div>
+
 </footer>
 </body>
 </html>

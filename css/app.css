@@ -139,9 +139,16 @@ img {
 }
 
 .img-fluid {
-    display: block;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     height: 300px;
     width: 200px;
+
+}
+
+.product {
+    display: block;
 }
 
 p {
@@ -305,16 +312,49 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 @media (min-width: 960px) {
-
     .col-lg-3 {
         width: calc((100% / 12) * 4);  
     }
-    
 }
+
 .catalog, .sidebar  {
    width: 100%;
 }
 
+.form {
+margin: 0;
+padding: 0;
+}
+
+.form-container {
+width: 80%;
+margin: 0 auto;
+}
+
+.input-group {
+display: flex;
+flex-wrap: wrap;
+}
+
+.input-group div {
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    background-color: #f9e8e8;
+}
+
+@media (min-width: 760px) {
+.input-group div {
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+}
+    
 
 
 

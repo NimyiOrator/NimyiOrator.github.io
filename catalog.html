@@ -1,192 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" lang="ua" content="Це персональний сайт Анни Осипенко. Тут ви знайдете інформацію про мої досягнення, резюме, а також зможете звʼязатись зі мною.">
-    <meta name="description" lang="en" content="This is Anna Osypenko's personal website. Here you will find information about my achievements, CV, and my contacts.">
-    <meta name="keywords" lang="ua" content="особистий сайт, дизайн, маркетинг, навчання">
-    <meta name="keywords" lang="en" content="personal website, design, marketing, training">
-    <meta name="googlebot" content="notranslate" >
+<html>
+  <head>
+    <title>Shop.io | Bootstrap 5 E-commerce</title>
+    <meta charset="utf-8">
+    
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LARUM</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="css/app.css">
+    <meta name="robots" content="all,follow">
+  
+    <link rel="stylesheet" href="app.css" id="theme-stylesheet">
+    
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.ico">
+    
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <header class="navbar navbar-light bg-white">
+      
+      <!-- Navbar brand-->
+      <a class="navbar-brand" href="index.html">LARUM</a>
+      <label for="toggler" class="fas fa-bars"></label>
+      <input type="checkbox" id="toggler">
 
-    <script src="https://kit.fontawesome.com/7b5daf2193.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<!--Заголовок сторінки-->
-
-	<!--Навігаційна панель-->
-    <nav class="navbar">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Publishing house LARUM</a>
-
-    <div class="navbar-wrapper">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a href="#!" class="nav-link text-uppercase">Main page</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About us</a></li>
-            <li class="nav-item"><a href="catalog.html" class="nav-link text-uppercase">Catalog</a></li>
-            <li class="nav-item"><a href="blog.html" class="nav-link text-uppercase">Blog</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link text-uppercase">Contacts</a></li>
-        </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link text-uppercase" href="cart.html"><i class="fas fa-cart-shopping"></i></a></li>
-            <li class="nav-item"><a class="nav-link text-uppercase" href="heart.html"><i class="fas fa-heart"></i></a></li>
-            <li class="nav-item"><a class="nav-link text-uppercase" href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
-        </ul>
-        </div>
-    </div>
-    </nav>  
-<!--Заголовок сторінки-->
-<div class="container">
-    <div class="row">
-
-      <aside class="py-5 sidebar">
-        <div class="container">
-          <header class="text-center">
-            <h2 class="">Sidebar</h2>
-            
-          </header>
-        </div>
-        
-      </aside>
-      <!-- New arrivals-->
-      <main class="py-5 catalog">
-        <div class="container">
+        <!-- Navbar menu left-->
+        <nav class="navbar-nav">
+          <a class="nav-link text-uppercase" href="index.html">Головна</a>
           
-          <header class="text-center">
-            <h2 class="">Новинки</h2>
-            <p class="text-muted">Обирай із наших нових надходжень</p>
-          </header>
-          
-          <div class="container text-center" id="newArrivals">
-            <div class="wrapper row">
-              <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
-                <div class="product">
-                    <span class="badge">Новинка</span><a href="detail.html"></a>
-                </div>
-                <div>
-                    <img class="img-fluid" src="images/1_1_27.png" alt="Round grey hanging decor">
-                </div>
-                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Нові темні віки. Колонія</a></h6>
-                <p class="text-center text-muted">450 грн</p>
-              </article>
+          <a class="nav-link text-uppercase active" href="#!">Каталог</a>
+          <a class="nav-link text-uppercase" href="blog.html">Блог</a>
+          <a class="nav-link text-uppercase" href="contact.html">Контакти</a>
+          <a class="nav-link text-uppercase" href="about.html">Про нас</a>
+        </nav>
+        <!-- Navbar menu right-->
+        <nav class="toolbar-nav">
+          <a class="nav-link text-uppercase fas fa-dolly-flatbed" href="cart.html"></a>
+          <a class="nav-link text-uppercase far fa-heart" href="#"></a>
+          <a class="nav-link text-uppercase far fa-user" href="login.html"></a>
+        </nav>
+     
+  </header>
 
-              <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
-                <div class="product">
-                    <span class="badge">Новинка</span><a href="detail.html"></a>
-                </div>
-                <div>
-                    <img class="img-fluid " src="images/212_1_11.jpg" alt="Round grey hanging decor">
-                </div>
-                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Незриме життя Адді Лярю</a></h6>
-                <p class="text-center text-muted">500 грн</p>
-              </article>
+    <!--  Modal -->
+    
 
-              <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
-                <div class="product">
-                    <span class="badge">Новинка</span><a href="detail.html"></a>
+    <!-- Hero slider-->
+    <section class="hero" style="background: url(images/bg-banner.jpg)">
+      <div class="container" id="hero">
+          <div>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <p class="h6 text-uppercase">Найгарячіші бестселери</p>
+                  <h1 class="hero-heading title">Найцікавіші новинки травня</h1>
+                  
+                    <div class="col-6">
+                      <p class="subtitle">Переходь за посиланням та скоріше поповнюй домашню бібліотеку</p>
+                    </div>
+               
+                  <a class="btn btn-insert" href="shop.html">Купити</a>
                 </div>
-                <div>
-                    <img class="img-fluid" src="images/221_1_15.jpg" alt="Round grey hanging decor">
-                </div>
-                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Гра престолів</a></h6>
-                <p class="text-center text-muted">600 грн</p>
-              </article>
-
-              <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">               
-                <div class="product">
-                    <span class="badge">Новинка</span><a href="detail.html"></a>
-                </div>
-                <div>
-                    <img class="img-fluid" src="images/30_1_16.jpg" alt="Round grey hanging decor">
-                </div>
-                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Танець недоумка</a></h6>
-                <p class="text-center text-muted">350 грн</p>
-              </article>
-
-              <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">               
-                <div class="product">
-                    <span class="badge">Новинка</span><a href="detail.html"></a>
-                </div>
-                <div>
-                    <img class="img-fluid" src="images/61a364d5d7ef5528b2fed6d4f34593c5.png" alt="Round grey hanging decor">
-                </div>
-                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Двір срібного полумʼя</a></h6>
-                <p class="text-center text-muted">400 грн</p>
-            </article>
-
-                <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
-                <div class="product">
-                    <span class="badge">Новинка</span><a href="detail.html"></a>
-                </div>
-                <div>
-                    <img class="img-fluid" src="images/824b4227d2e7aaf8fa14f439f72f7fbe.jpg" alt="Round grey hanging decor">
-                </div>
-                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Лазарус</a></h6>
-                <p class="text-center text-muted">300 грн</p>
-              </article>
+              </div>
             </div>
-            <!-- prev next -->
-            
           </div>
-        </div>
-      </main>
-
-    </div>
-  </div>
-<!--Підвал сторінки-->
-<footer class="bg-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <h6 class="text-white">Menu</h6>
-                <ul class="list-unstyled text-muted float-left">
-                    <li class="mb-2"> <a class="reset-anchor" href="#">About</a></li>
-                    <li class="mb-2"><a class="reset-anchor" href="#">Blog</a></li>
-                    <li class="mb-2"><a class="reset-anchor" href="#">Contact</a></li>
-                    <li class="mb-2"><a class="reset-anchor" href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="col-4">
-                <h6 class="text-white">Checkout</h6>
-                <ul class="list-unstyled text-muted float-left">
-                    <li class="mb-2"> <a class="reset-anchor" href="#">My Account</a></li>
-                    <li class="mb-2"> <a class="reset-anchor" href="#">Orders Tracking</a></li>
-                    <li class="mb-2"> <a class="reset-anchor" href="#">Checkout</a></li>
-                    <li class="mb-2"> <a class="reset-anchor" href="#">Wishlist</a></li>
-                </ul>
-            </div>
-            <div class="col-4">
-                <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+380 380 38 00</a></p>
-                <p class="text-muted">Cагайдачного 35б, Київ, Україна</p>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-youtube"></i></a></li>
-                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-google"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
+      </div>
+    </section>
 
     <div class="container">
+      <div class="row">
+
+        <aside class="py-5 sidebar">
+          <div class="container">
+            <header class="text-center">
+              <h2 class="">Категорії</h2>
+
+              <ul class="categories">
+                <li><a href="#">Класична література</a></li>
+                <li><a href="#">Фентезі</a></li>
+                <li><a href="#">Фантастика</a></li>
+                <li><a href="#">Науково-популярна література</a></li>
+                <li><a href="#">Поезія</a></li>
+                <li><a href="#">Комікси</a></li>
+                <li><a href="#">Манга</a></li>
+                <li><a href="#">Дитяча література</a></li>
+                <li><a href="#">Подарункові видання</a></li>
+                <li><a href="#">Детективи</a></li>
+              </ul>
+              
+            </header>
+          </div>
+          
+        </aside>
+        <!-- New arrivals-->
+        <main class="py-5 catalog">
+          <div class="container">
+            
+            <header class="text-center">
+              <h2 class="">Новинки</h2>
+              <p class="text-muted">Погляньте на наші нові надходження</p>
+            </header>
+            
+            <div class="container" id="newArrivals">
+              <div class="wrapper row">
+                <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
+                  
+                  <div class="product">
+                    <div class="icons">
+                      <a href="#" class="fas fa-shopping-cart"></a>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#productView" class="fas fa-eye"></a>
+                    </div>
+                    
+                    <span class="badge">Новинка</span><a href="detail.html">
+                    <img class="img-fluid" src="images/1_1_27.png" alt="Koloniya">
+                  </a>
+                  
+                  </div>
+
+                  <h6 class="text-center"><a class="reset-anchor" href="detail.html">Колонія. Нові темні віки</a></h6>
+                  <p class="text-center text-muted price">450 грн</p>
+                </article>
+                <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="product">
+                        <div class="icons">
+                          <a href="#" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#productView0" class="fas fa-eye"></a>
+                        </div>
+                  <div class="product"><span class="badge">Новинка</span><a href="detail.html">
+                    <img class="img-fluid" src="images/212_1_11.jpg" alt="Nezryme_zhyttya">
+                  </a>
+                  
+                  </div>
+
+                  <h6 class="text-center"><a class="reset-anchor" href="detail.html">Незриме життя Адді Лярю</a></h6>
+                  <p class="text-center text-muted price">500 грн</p>
+                </article>
+                <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="product">
+                        <div class="icons">
+                          <a href="#" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#productView1" class="fas fa-eye"></a>
+                        </div>
+                  <div class="product"><span class="badge">Новинка</span><a href="detail.html">
+                    <img class="img-fluid" src="images/221_1_15.jpg" alt="Gra_prestoliv">
+                  </a>
+                  
+                  </div>
+
+                  <h6 class="text-center"><a class="reset-anchor" href="detail.html">Гра престолів</a></h6>
+                  <p class="text-center text-muted price">600 грн</p>
+                </article>
+                <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="product">
+                        <div class="icons">
+                          <a href="#" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#productView2" class="fas fa-eye"></a>
+                        </div>
+                  <div class="product"><span class="badge">Новинка</span><a href="detail.html">
+                    <img class="img-fluid" src="images/30_1_16.jpg" alt="Tanez_nedoumka">
+                  </a>
+                  
+                  </div>
+
+                  <h6 class="text-center"><a class="reset-anchor" href="detail.html">Танець недоумка</a></h6>
+                  <p class="text-center text-muted price">350 грн</p>
+                </article>
+                <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="product">
+                        <div class="icons">
+                          <a href="#" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#productView3" class="fas fa-eye"></a>
+                        </div>
+                  <div class="product"><span class="badge">Новинка</span><a href="detail.html">
+                    <img class="img-fluid" src="images/61a364d5d7ef5528b2fed6d4f34593c5.png" alt="Dvir_polumya">
+                  </a>
+                  
+                  </div>
+
+                  <h6 class="text-center"><a class="reset-anchor" href="detail.html">Двір срібного полумʼя</a></h6>
+                  <p class="text-center text-muted price">400 грн</p>
+                </article>
+              </div>
+              <!-- prev next -->
+              
+            </div>
+          </div>
+        </main>
+
+      </div>
+    </div>
+    
+
+    <!-- Divider section-->
+    <section class="divider" style="background: url(images/divider-bg.jpg)">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+
+            </div>
+            <div class="col-6">
+              <p class="h6 text-uppercase text-muted">Весняне оновлення</p>
+              <h1 class="hero-heading title">Нові історії вже чекають на тебе</h1>
+              
+                  <p class="text-muted subtitle">Переходь та обирай серед лауреатів престижних книжкових премій</p>
+                  <a class="btn text" href="shop.html">Купити</a>
+            </div>
+              
+            </div>
+          </div>
+    </section>
+    <!-- Featured products-->
+
+ 
+    <!-- Features-->
+
+    <div class="bg-dark">
+      <div class="container">
         <div class="row">
-            <div class="col-6 text-left">
-                <p class="small">Pablishing house LARUM &#169 2024</p>
+          
+          <div class="col-4">
+            <h6 class="text-white">Меню</h6>
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-2"> <a class="reset-anchor" href="#">Про нас</a></li>
+              <li class="mb-2"><a class="reset-anchor" href="#">Блог</a></li>
+              <li class="mb-2"><a class="reset-anchor" href="#">Контакти</a></li>
+              <li class="mb-2"><a class="reset-anchor" href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h6 class="text-white">Перевірити</h6>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-2"> <a class="reset-anchor" href="#">Мій акаунт</a></li>
+              <li class="mb-2"> <a class="reset-anchor" href="#">Трекінг замовлень</a></li>
+              <li class="mb-2"> <a class="reset-anchor" href="#">Відгуки</a></li>
+              <li class="mb-2"> <a class="reset-anchor" href="#">Список бажань</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+380 380 38 00</a></p>
+            <p class="text-muted">Cагайдачного 35б, Київ, Україна</p>
+            <ul class="list-inline social-list">
+              <li class="list-inline-item">
+                <a class="social-icon fab fa-facebook-f" href="#"></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-icon fab fa-twitter" href="#"></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-icon fab fa-youtube" href="#"></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-icon fab fa-pinterest" href="#"></a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="border border-top" style="border-color: #1d1d1d !important">
+          <div class="row">
+            <div class="col-6">
+              <p class="small text-muted">Pablishing house LARUM &#169 2024</p>
             </div>
             <div class="col-6 text-right">
-                <p class="small">Designed by Anna Osypenko</p>
+              <p class="small text-muted">Designed by Anna Osypenko</p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
-</footer>
-</body>
+    <div class="modal" id="productView">
+      <div class="modal-dialog">
+        <a href="#!" title="Close dialog" class="close fas fa-times"></a>
+        <div class="modal-body">
+          <aside>
+            <img src="images/1_1_27.png">
+          </aside>
+          <main>
+            <div class="info-container">
+              <h2 class="info-header">Колонія</h2>
+              <div class="info-price">450 грн</div>
+              <div class="info-shipping">Безкоштовна доставка</div>
+              <div class="info-button">
+                <a href="#!" class="btn btn-submit fas fa-cart-plus"> У кошик</a>
+              </div>
+              <div class="info-qty">
+                Кількість: <input value="1" type="number">
+              </div>
+              <div class="info-description">«Колонія» — перша книга з фантастичного циклу «Нові Темні Віки» про світ у ХХІІ столітті. Це історія про те, що людина, попри всі досягнення цивілізації, не змінюється, й ані збільшення тривалості життя, ні навіть перетворення на двопланетний вид не гарантує людству порятунок.</div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="productView0">
+        <div class="modal-dialog">
+          <a href="#!" title="Close dialog" class="close fas fa-times"></a>
+          <div class="modal-body">
+            <aside>
+              <img src="images/212_1_11.jpg">
+            </aside>
+            <main>
+              <div class="info-container">
+                <h2 class="info-header">Незриме життя Адді Лярю</h2>
+                <div class="info-price">500 грн</div>
+                <div class="info-shipping">Безкоштовна доставка</div>
+                <div class="info-button">
+                  <a href="#!" class="btn btn-submit fas fa-cart-plus"> У кошик</a>
+                </div>
+                <div class="info-qty">
+                  Кількість: <input value="1" type="number">
+                </div>
+                <div class="info-description">Далекого 1714 року у Франції одна дівчина укладає фаустівську угоду, щоб отримати вічне життя. Але угода виявляється прокляттям: тепер її забуватимуть усі, кого вона зустріне на своєму шляху. Так починається неймовірне життя Адді Лярю, її приголомшлива подорож століттями і континентами, історією і мистецтвом, під час якої вона шукає способу залишити слід у світі. Проте одного дня, триста років по тому, все змінюється, коли Адді в одній непримітній книгарні натрапляє на юнака, який пам’ятає її ім’я.
+                </div>
+            </main>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="productView1">
+        <div class="modal-dialog">
+          <a href="#!" title="Close dialog" class="close fas fa-times"></a>
+          <div class="modal-body">
+            <aside>
+              <img src="images/221_1_15.jpg">
+            </aside>
+            <main>
+              <div class="info-container">
+                <h2 class="info-header">Гра престолів</h2>
+                <div class="info-price">600 грн</div>
+                <div class="info-shipping">Безкоштовна доставка</div>
+                <div class="info-button">
+                  <a href="#!" class="btn btn-submit fas fa-cart-plus"> У кошик</a>
+                </div>
+                <div class="info-qty">
+                  Кількість: <input value="1" type="number">
+                </div>
+                <div class="info-description">Перша книга циклу - "Гра престолів" - це захопливий світ Сімох Королівств, де літо й зима тривають по кілька років, з півночі наступають загадкові й моторошні вороги, а вельможні родини ведуть ненастанну війну за престол. Майже за три століття до подій першого роману Сім Королівств Вестеросу було з'єднано при династії Таргарієнів, які встановили владу завдяки повному контролю над драконами. Династія Таргарієнів правила триста років, доки громадянська війна та міжособистісні конфлікти не призвели до гибелі всіх драконів. Події "Гри престолів" розгортаються у мирні часи, але завжди будуть існувати ті, хто прагне захопити владу.</div>
+            </main>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="productView2">
+        <div class="modal-dialog">
+          <a href="#!" title="Close dialog" class="close fas fa-times"></a>
+          <div class="modal-body">
+            <aside>
+              <img src="images/30_1_16.jpg">
+            </aside>
+            <main>
+              <div class="info-container">
+                <h2 class="info-header">Танець недоумка</h2>
+                <div class="info-price">350 грн</div>
+                <div class="info-shipping">Безкоштовна доставка</div>
+                <div class="info-button">
+                  <a href="#!" class="btn btn-submit fas fa-cart-plus"> У кошик</a>
+                </div>
+                <div class="info-qty">
+                  Кількість: <input value="1" type="number">
+                </div>
+                <div class="info-description">Космічний біолог Гіль, за плечима якого чимало військових операцій, переживає не найкращі часи: безробіття, безгрошів'я, сім'я на межі розлучення, ще й висока ймовірність, що проявиться спадкова генетична хвороба, в якій швидка смерть — це чи не найкращий фінал. І ось неочікувано з'являється пропозиція роботи, яка, здавалося б, вирішує всі проблеми одночасно: наукова експедиція на далеку планету. Хороші гроші, медична страховка, мінімальні ризики. Чи виявиться рішення летіти, до якого підштовхує страх, правильним? І чи такі вже мінімальні ризики на далекій і химерній планеті Іш-Чель?
+                </div>    
+                </main>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="productView3">
+        <div class="modal-dialog">
+          <a href="#!" title="Close dialog" class="close fas fa-times"></a>
+          <div class="modal-body">
+            <aside>
+              <img src="images/61a364d5d7ef5528b2fed6d4f34593c5.png">
+            </aside>
+            <main>
+              <div class="info-container">
+                <h2 class="info-header">Двір срібного полумʼя</h2>
+                <div class="info-price">400 грн</div>
+                <div class="info-shipping">Безкоштовна доставка</div>
+                <div class="info-button">
+                  <a href="#!" class="btn btn-submit fas fa-cart-plus"> У кошик</a>
+                </div>
+                <div class="info-qty">
+                  Кількість: <input value="1" type="number">
+                </div>
+                <div class="info-description">Неста Арчерон завжди була гордою й гарячкуватою. Відколи проти власної волі стала фейрі, вона намагається знайти собі місце в небезпечному світі, спустошеному війною. Не може забути про жахи війни з Гайберном, а ще відчуває, що не тільки не має друзів, але й втрачає любов рідних сестер. Їй випадає шанс відпружитися на працю в бібліотеці та щоденні тренування під наглядом Кассіана. Проте навіть цей суворий воїн може виявитись безсилий у боротьбі Нести з її власними монстрами. Ще невідомо, чи спроможеться він запалити в ній полум’ям жагу до кохання й до прийняття нової себе...</div>    
+                </main>
+          </div>
+        </div>
+      </div>
+
+
+  </body>
 </html>

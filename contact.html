@@ -1,43 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" lang="ua" content="На цій сторінці знаходяться наші контакти. Звʼяжіться з нами.">
-    <meta name="keywords" lang="ua" content="особистий сайт, дизайн, маркетинг, навчання">
-    <meta name="googlebot" content="notranslate" >
-    <title>Anna Osypenko's personal website</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-<!--Заголовок сторінки-->
-<header><h1>You can contact us this way</h1></header>
-	<!--Навігаційна панель-->
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Main page</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="catalog.html">Catalog</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="#!">Contacts</a></li>
-        </ul>
-<!--Блок презентації-->
-<div class="presentation">
-<h1>Anna Osypenko - design for your business</h1>
-</div>
-<div class="contacts"></div>
-<p><strong>e-mail</strong></p>
-<p><strong>Phone</strong></p>
-<p></p><strong>Telrgram</strong></p>
-</div>
-<hr>
-<!--Підвал сторінки-->
+<html>
+  <head>
+    <title>LARUM</title>
+    <meta charset="utf-8">
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+  
+    <link rel="stylesheet" href="app.css" id="theme-stylesheet">
+    
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.ico">
+    
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <header class="navbar navbar-light bg-white">
+      
+      <!-- Navbar brand-->
+      <a class="navbar-brand" href="index.html">LARUM</a>
+      <label for="toggler" class="fas fa-bars"></label>
+      <input type="checkbox" id="toggler">
+
+        <!-- Navbar menu left-->
+        <nav class="navbar-nav">
+          <a class="nav-link text-uppercase" href="index.html">Головна</a>
+          
+          <a class="nav-link text-uppercase" href="catalog.html">Каталог</a>
+          <a class="nav-link text-uppercase" href="blog.html">Блог</a>
+          <a class="nav-link text-uppercase active" href="#!">Контакти</a>
+          <a class="nav-link text-uppercase" href="about.html">Про нас</a>
+        </nav>
+        <!-- Navbar menu right-->
+        <nav class="toolbar-nav">
+          <a class="nav-link text-uppercase fas fa-dolly-flatbed" href="cart.html"></a>
+          <a class="nav-link text-uppercase far fa-heart" href="#"></a>
+          <a class="nav-link text-uppercase far fa-user" href="login.html"></a>
+        </nav>
+     
+  </header>
+
+  <main>
+    <div class="container">
+    
+        <header class="text-center">
+            <h1>Звʼяжіться з нами</h1>
+        </header>
+        <form action="/contact" class="form" method="get">
+            <div class="form-container">
+                <div class="input-group">
+                    <div>
+                        <label for="firstname">*Ваше імʼя:</label>
+                        <input id="firstname" name="first_name" class="form-control" required="required" />
+                    </div>
+                    <div>
+                        <label for="lastname">*Ваше прізвище:</label>
+                        <input id="lastname" name="last_name" type="text" class="form-control" required />
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div>
+                        <label for="email">*Ваш email:</label>
+                        <input id="email" name="email" class="form-control" type="email" required />
+                    </div>
+                    <div>
+                        <label for="phone">Ваш телефон:</label>
+                        <input id="phone" name="phone" class="form-control" type="tel" />
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Ваше повідомлення:</label>
+                    <textarea class="form-control" placeholder="Drop your message" required >"Напишіть своє повідомлення"</textarea>
+                </div>
+                <div class="input-group">
+                    <button type="submit">Надіслати</button>
+                </div>
+            </div>
+            </div>
+        </form>
+         
+    </div>
+    
+    </main> 
+
+
 <footer>
-<p>Anna Osypenko's personal website &#169 2024</p>
-<a href="https://mail.google.com/mail/u/0/?ogbl#inbox" target="_blank">Email us now</a>
-</footer>
-</body>
+  <div class="bg-dark">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-4">
+          <h6 class="text-white">Меню</h6>
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-2"> <a class="reset-anchor" href="#">Про нас</a></li>
+            <li class="mb-2"><a class="reset-anchor" href="#">Блог</a></li>
+            <li class="mb-2"><a class="reset-anchor" href="#">Контакти</a></li>
+            <li class="mb-2"><a class="reset-anchor" href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h6 class="text-white">Перевірити</h6>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2"> <a class="reset-anchor" href="#">Мій акаунт</a></li>
+            <li class="mb-2"> <a class="reset-anchor" href="#">Трекінг замовлень</a></li>
+            <li class="mb-2"> <a class="reset-anchor" href="#">Відгуки</a></li>
+            <li class="mb-2"> <a class="reset-anchor" href="#">Список бажань</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+380 380 38 00</a></p>
+          <p class="text-muted">Cагайдачного 35б, Київ, Україна</p>
+          <ul class="list-inline social-list">
+            <li class="list-inline-item">
+              <a class="social-icon fab fa-facebook-f" href="#"></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-icon fab fa-twitter" href="#"></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-icon fab fa-youtube" href="#"></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-icon fab fa-pinterest" href="#"></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="border border-top" style="border-color: #1d1d1d !important">
+        <div class="row">
+          <div class="col-6">
+            <p class="small text-muted">Pablishing house LARUM &#169 2024</p>
+          </div>
+          <div class="col-6 text-right">
+            <p class="small text-muted">Designed by Anna Osypenko</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+  </body>
 </html>

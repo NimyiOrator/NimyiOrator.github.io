@@ -574,7 +574,7 @@ hr {
 
 .blog-item {
     margin: 0 1.3rem 2rem;
-    min-height: 18rem;
+    min-height: 30rem;
     background: white;
     background-size: cover;
     border-radius: 3%;
@@ -626,7 +626,7 @@ hr {
 
 .blog-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
     width: 100%;
     justify-content: center;
     align-items: center;
